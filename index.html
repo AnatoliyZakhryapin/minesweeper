@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Angkor&display=swap:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="RangeStyle.css">
+    <title>Griglia Campo Minato</title>
+</head>
+
+<body>
+    <div class="app">
+        <main>
+            <section class="section-game">
+                <div class="container mb-30">
+                    <div class="row">
+                        <div class="col col-4 counter-display">
+                            <div class="counter" id="counter">
+                                <span class="counter-number">8
+                                    <span class="counter-over counter-flag"></span>
+                                </span>
+                                <span class="counter-number ">8
+                                    <span class="counter-over counter-flag"></span>
+                                </span>
+                                <span class="counter-number">8
+                                    <span class="counter-over counter-flag"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col col-3">
+                            <div class="smile reset">
+                                <img id="smile-img" src="img/smile.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col col-4 counter-display">
+                            <div class="counter" id="counter">
+                                <span class="counter-number">8
+                                    <span class="counter-over"></span>
+                                </span>
+                                <span class="counter-number">8
+                                    <span class="counter-over"></span>
+                                </span>
+                                <span class="counter-number">8
+                                    <span class="counter-over"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="grid">
+
+                    </div>
+                    <div class="game-params active">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="game-level">
+                                    <h1 class="title">GAME LEVEL</h1>
+                                    <div class="btn-group">
+                                        <button class="btn btn-difficulty active"
+                                            data-difficulty="Beginner">Beginner</button>
+                                        <button class="btn btn-difficulty " data-difficulty="Middle">Middle</button>
+                                        <button class="btn btn-difficulty " data-difficulty="Expert">Expert</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bombs-quantity">
+                                    <h1 class="title">BOMBS: <span id="bombs-chosed">16</span></h1>
+                                    <div class="bombs-range">
+                                        <span id="min-value">Min: 1</span>
+                                        <input class="istyle" type="range" id="points" value='16' name="points" min="1"
+                                            max="16">
+                                        <span id="max-value">Max: 16</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="btn-group">
+                                    <buttonc class="btn btn-start" id="btn-start">
+                                        START
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
