@@ -1,4 +1,3 @@
-// Griglia Campo Minato
 
 /** ***************VARIABLES******************** */
 
